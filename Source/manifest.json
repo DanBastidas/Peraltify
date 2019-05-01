@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Peraltify",
+	"version": "1.0",
+	"description": "Replaces the text 'cool' with a random number of 'cool'",
+	"icons": { "16": "PeraltifyLogo16x.png",
+			 "48": "PeraltifyLogo48x.png",
+			"128": "PeraltifyLogo.png" },
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+
+		}
+	]
+}
